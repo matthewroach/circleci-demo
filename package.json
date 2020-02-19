@@ -27,6 +27,9 @@
                 "path": "*.css",
                 "maxSize": "1kB"
             }
-        ]
+        ],
+        "ci": {
+            "trackBranches": ["master"]
+        }
     }
   }

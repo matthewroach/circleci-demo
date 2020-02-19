@@ -21,8 +21,11 @@
     "devDependencies": {
       "bundlesize": "0.17.2"
     },
-      "bundlesize": [{
+    "bundlesize": [{
       "path": "styles.css",
       "maxSize": "1 kB"
+    },{
+      "path": "style-b.css",
+      "maxSize": "10 kB"
     }]
   }

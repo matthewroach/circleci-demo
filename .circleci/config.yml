@@ -11,7 +11,7 @@ jobs:
           steps:
             - run: npm install
             - run: npm test
-            - run: npm run bundlesize
+            - run: npm run bundlewatch
 workflows:
     build-and-test:
       jobs:

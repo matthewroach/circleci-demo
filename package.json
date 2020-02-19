@@ -25,7 +25,8 @@
         "files": [
             {
                 "path": "*.css",
-                "maxSize": "500B"
+                "maxSize": "500B",
+                "compression": "none"
             }
         ],
         "ci": {

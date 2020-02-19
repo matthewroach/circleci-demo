@@ -1,1 +1,9 @@
 body {}
+
+main {
+  background: red;
+}
+
+footer {
+  background: rgb(200, 200, 200);
+}

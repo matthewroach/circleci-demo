@@ -7,7 +7,16 @@ jobs:
       name: node/default
     steps:
       - checkout
-      - node/with-cache:
+      - node:
+          steps:
+            - run: npm install
+            - run: npm test
+  build-and-test2:
+    executor:
+      name: node/default
+    steps:
+      - checkout
+      - node:
           steps:
             - run: npm install
             - run: npm test
@@ -15,6 +24,4 @@ workflows:
     build-and-test:
       jobs:
         - build-and-test
-    build-and-test2:
-      jobs:
-        - build-and-test
+        - build-and-test2

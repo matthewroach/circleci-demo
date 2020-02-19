@@ -11,17 +11,8 @@ jobs:
           steps:
             - run: npm install
             - run: npm test
-  test-build:
-    executor:
-      name: node/default
-    steps:
-      - checkout
-      - node/with-cache:
-          steps:
-            - run: npm install
             - run: npm run bundlesize
 workflows:
     build-and-test:
       jobs:
         - build-and-test
-        - test-build

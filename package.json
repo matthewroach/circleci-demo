@@ -4,7 +4,8 @@
     "version": "1.0.0",
     "main": "index.js",
     "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
+      "test": "echo \"Error: no test specified\" && exit 0",
+      "bundlewatch": "bundlewatch"
     },
     "repository": {
       "type": "git",
@@ -16,5 +17,16 @@
     "bugs": {
       "url": "https://github.com/matthewroach/circleci-demo/issues"
     },
-    "homepage": "https://github.com/matthewroach/circleci-demo"
+    "homepage": "https://github.com/matthewroach/circleci-demo",
+    "devDependencies": {
+      "bundlewatch": "0.2.5"
+    },
+    "bundlewatch" : {
+        "files": [
+            {
+                "path": "*.css",
+                "maxSize": "1kB"
+            }
+        ]
+    }
   }

@@ -7,14 +7,12 @@ jobs:
       name: node/default
     steps:
       - checkout
-      - node:
+      - node/with-cache:
           steps:
             - run: npm install
             - run: npm test
+            - run: npm run bundlewatch
 workflows:
     build-and-test:
-      jobs:
-        - build-and-test
-    build-and-test2:
       jobs:
         - build-and-test
